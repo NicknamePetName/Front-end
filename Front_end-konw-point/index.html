@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Nickname</title>
+</head>
+<!---->
+<body>
+  <nav></nav>  <!-- nav 的fixed属性会导致脱离正常的文档流 设置padding-top解决问题-->
+  <main></main>  <!-- nav main 标签可以更明确的传达区块的含义 -->
+  <div>
+    <p>
+      <h1>~</h1>
+      <h2>~</h2>  
+      <h3>~</h3>
+      <h4>~</h4>
+      <h5>~</h5>
+      <h6>~</h6>
+      <strong>~</strong>  
+      <span>~</span> <!--字体颜色-->
+      <img class="fit-picture" src="照片(相对/绝对)路径" alt="说明"> <!--照片(jpg、jpeg、png、gif动图)-->
+      <audio controls src="/media/cc0-audio/t-rex-roar.mp3">~</audio> <!--声音-->
+      <progress id="file" max="100" value="70"> 70% </progress> <!--进度条70%-->
+      <!--超链接去掉文字的下划线需要的是css中的text-decoration：none-->
+      <a href="https://www.~~~~~~.com" target="_blank">亦忻</a> <!--链接标签（可加图片等）target="_top/_self/_parent"   默认行为是_self-->
+
+      <ul>  <!--无序列表-->
+        <li>~</li>
+      </ul>
+
+      <ol>  <!--有序列表-->
+        <li></li>
+      </ol>
+    </p>
+  </div>
+
+  <form action="https://www.~~~~~~.com">  <!--标签-->
+    <input type="text" placeholder="昵称" name="input的名字" value="输入框预填写内容" readonly disabled> <!--单行文本输入框-->
+    <input type="password" name="password" placeholder="密码"> <!--密码输入框-->
+    <input type="number" placeholder="手机号" name="mobile" >  <!--只允许输入数字-->
+
+    <!-- <input type="radio" name="gender" value="male" id="male">
+    <label for="male">男</label> -->
+    <label><input type="radio" name="gender" value="male">男</label>  <!--单选框,同一道单选题name必须相同-->
+
+    <!-- <input type="checkbox" name="interest" value="coding" id="coding">
+    <label for="coding">编程</label> -->
+    <label ><input type="checkbox" name="interest" value="coding">编程</label>  <!--复选框,同一道单选题name必须相同-->
+    <!--value是你在和后端做数据交互的时候要传的值 单独写静态前端页面的时候它是不显示的-->
+
+    <textarea  
+      name = "sign"    
+      rows = "5"       
+      cols = "30"
+      placeholder = "请输入个性签名"
+    ></textarea>   <!--多行文本输入框--><!--rows：高度 cols：宽度-->
+    
+    <select name="career" >  <!--选项菜单-->  <!--<select name="career" multiple> 多选--> 
+      <option value="default">请选择职业</option>
+      <option value="staff">公司职员</option>
+      <option value="freelancer">自由职业者</option>
+      <option value="student">学生</option>
+      <option value="other">其他</option>
+    </select>
+
+    <button type="submit">注册</button>  <!--按钮-->  <!--“注册”亦可以改造成图片-->
+
+    <input type="text" style="font-size: 30px;">
+    <p style="font-weight: 400;color: white;text-align: center;line-height: 30px;letter-spacing: 30px;">~</p>
+    <!--
+      font-size: 36px;     字体大小
+      font-weight: 100;    字体加粗(1~9)*100 lighter bold bolder normal
+      font-family:'Goudy Bookletter 1911', sans-serif, "Gill Sans Extrabold",'宋体',"楷体";  字体 
+      color: black; //#DAE8FC; //rgb(253,217,106); //rgba(253,217,106,"0~1")  a（0~1）表示透明度
+      text-align:center; //left; //right;    文字左，中，右对齐
+      line-height:30px;    行高（作用：1.行间距，2.使文字上下居中）<文字外的矩形高度为80px,则文字行高为80px>
+      letter-spacing:30px; 字间距
+    -->
+    <input type="text" style="font-weight: normal;">
+    <p style="font-size: 1px;color: white;text-align: center;">~</p> <!--text-align: 文字左，中，右对齐-->
+    <p style="line-height: 30px;letter-spacing: 30px;">~</p>
+    
+
+    <img src="E:\book\网页布局\bg.jpg" /> <!--绝对路径-->
+    <link rel="stylesheet" href="E:\style\css\index.css"> <!--绝对路径-->
+    <img src="E:\images\beauty.jpg" /> <!--绝对路径-->
+
+    <link rel="stylesheet" href="./index.css"> <!--相对路径-->
+    <!-- 或者./去掉也可以，效果是一样的 -->
+    <link rel="stylesheet" href="index.css"> <!--相对路径-->
+
+    <link rel="stylesheet" href="../index.css">  <!--../回到上一级文件架目录    可以这样写 "../css/index.css"-->
+  </form> 
+  <p class="css box" id="idcss"><span>insex.css</span></index></p>
+  <div class="father"> 
+    <div class="son"></div>
+  </div>
+</body>
+</html>
+
+
+
+

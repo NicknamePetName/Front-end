@@ -1,0 +1,100 @@
+.css {
+    list-style: none; /* 去除li标签前的小圆点 */
+    padding: 0; /* 清除标签默认的内边距 */
+    font-size: 36px;              /* 字体大小 */
+    font-weight: 100;             /* 字体加粗,其值有：(1~9)*100、normal、lighter、bold、bolder */
+    font-family:sans-serif;       /* 字体 'Goudy Bookletter 1911', sans-serif, "Gill Sans Extrabold",'宋体',"楷体"*/ 
+    color: black;               /* #FFFFFF; rgb(253,217,106); rgba(253,217,106,"0~1")  a（0~1）表示透明度*/
+    text-align:center;            /* left; right;    文字中，左，右对齐 */
+    line-height:30px;             /* 行高（作用：1.行间距，2.使文字上下居中）<文字外的矩形高度为80px,则文字行高为80px> */
+    letter-spacing:30px;          /* 字间距 */
+}
+/* 选择器：标签选择器，类选择器，id选择器 */
+/* p span.css #idcss p>span */
+/* .box,p,h3,.phone{}不同的标签添加形同的样式 */
+/* 文字属性的继承性：文字颜色，字体大小，字体，字间距等都会被继承到 */
+
+/* 盒模型 ::content(内容区) padding(内边距) border(边框) margin(外边距)*/
+.box {
+    width: 200px;  /* 宽 */
+    height: 100px; /* 高 */
+    background-color: purple;  /* 和字体颜色一样:有16进制，rgb,rgda */
+    width: 60%;
+    height: 70%; /*  这里的%是相当于父元素的，子元素宽度相当于父元素的60% */
+}
+.box {
+    padding: 20px;
+    /* 规则：上，右，下，左 */
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding: 20px 20px 20px 20px;
+    /* 上下一样左右一样简写 (上下一样写一个即可，左右一样写一个即可)*/
+    padding: 20px 30px;
+    /* 上下一样，左右不一样简写 */
+    padding: 20px 30px 20px 10px;
+    /* 上下不一样，左右一样简写 */
+    padding: 30px 10px 20px;
+    box-sizing: content-box;  /* 计算公式：width = 内容的宽度 */
+                                       /* height = 内容的高度 */
+    box-sizing: border-box;  /* 计算公式：width = border + padding + 内容的宽度 */
+                                      /* height = border + padding + 内容的高度 */
+    border-width: 2px;
+    border-color: grey;  /* 和字体颜色一样:有16进制，rgb,rgda */
+    border-style: solid;   /* dashed 虚线 */
+    border: 2pc solid grey;
+    border-top-color: blue;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom: none;   /* 无边框 */
+    border-radius: 12px;   /* 圆角 */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 15px;
+    /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /*  阴影 */
+    display: inline-block;   /* 同一行显示 */
+}
+
+/* margin水平距离计算两个magin距离之和，垂直距离取两个盒子margin最大值 */
+.father {
+    width: 400px;
+    height: 200px;
+    border: 2px solid #ccc;
+    margin-bottom: 50px;  /* 两个盒子垂直距离一般这样写 */
+}
+.son {    
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;    /* 使子盒子在父盒子中左右居中，但是必须要有宽度 */
+    border: 1px solid #ccc;
+}
+.box {
+    display: block;    /* 将行内元素转换为块状元素，从而设置宽，高 */
+    display: inline;   /* 将块状元素转换为行内元素 */
+    display: none;     /* 隐藏这个盒子 */
+    display: inline-block;   /* 作用：在同一行显示的块元素 */
+    /* 去除回车 */ 
+    /* 1.     <div class="box1"></div><div class="box2"></div> *//* 将div标签写在一行 */
+    /* 2. 给父元素添加word-spacing：-50px 
+                    letter-spacing:-50px 属性(单词和单词之间的距离)，这里的距离写成负值，这个值要尽量小，一般写小于-20px的值 */
+    /* 3.给父元素设置font-size:0px; */
+    /* 行内元素：不能设置宽、高
+    行内元素：可以设置padding 虽然这样做可以给人块状的感觉，但还是有区别的，不要用这种方式去设置一个归定大小的块，否则会出现奇怪现象
+    行内元素：可以设置左右margin,但是不能设置上下margin */
+}
+.box {
+    /* 位置 */
+    position: static;      /* 默认定位 */
+    position: relative;    /* 相对定位 */
+    position: absolute;    /* 绝对定位 */
+    position: fixed;       /* 固定定位 */
+    z-index: 1;  /* 与固定定位一起用  */ /* 默认非static元素的z-index都为零;z-index越大，则约在最上面，离观察者越近;同样z-index，在HTML中的元素越靠后则越在最上面; */
+    position: sticky;      /* 粘性定位 */
+}
+.box {
+    float: left;
+    float: right;
+}

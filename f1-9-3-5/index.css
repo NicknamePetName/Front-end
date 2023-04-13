@@ -1,0 +1,269 @@
+::-webkit-input-placeholder {
+  color: red;
+}
+
+.content {
+  width: 100%;
+  height: 249px;
+  background-color: #FFFFFF;
+}
+
+.head {
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px #EEEEEE solid;
+  background-color: #FFFFFF;
+
+  /* box-sizing: border-box; */
+}
+
+
+.head  .zhihulogo {
+  width: 64px;
+  height: 30px;
+}
+
+.homepage_size {
+  width: 32px;
+  height: 22px;
+  font-weight: "PingFang SC";
+  font-size: 16px;
+  font-weight: 500;
+  color: #1C1C1C;
+  text-align: left;
+}
+
+.discover {
+  width: 32px;
+  height: 22px;
+  font-weight: "PingFang SC";
+  font-size: 16px;
+  font-weight: 500;
+  color: #8892A6;
+  text-align: left;
+}
+.answer {
+  width: 64px;
+  height: 22px;
+  font-weight: "PingFang SC";
+  font-size: 16px;
+  font-weight: 500;
+  color: #8892A6;
+  text-align: left;
+}
+input {
+  width: 326px;
+  height: 34px;
+  background-color: #F6F6F6;
+  border: 1px solid #EBEBEB;
+}
+.seek .search {
+  width: 16px;
+  height: 16px;
+}
+.questionbackground {
+  width: 58px;
+  height: 34px;
+  border-radius: 3px;
+  background: #0084FF;
+  /* background-color: #0084FF; */
+}
+.questionbackground > .question {
+  /* display: block; */
+  width: 28px;
+  height: 20px;
+  font-weight: "PingFang SC";
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  
+  /* margin: 15px 7px; */
+}
+
+.right .infrom,
+.right .message {
+  width: 26px;
+  height: 26px;
+}
+
+.home_picture .avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.box {
+  width: 134px;
+  height: 122px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+}
+
+.myhome .homepage {
+  width: 16px;
+  height: 16px;
+}
+
+.set .setup,
+.esc .exit {
+  width: 18px;
+  height: 18px;
+}
+
+.myhome > span,
+.set > span,
+.esc > span {
+  width: 56px;
+  height: 20px;
+  font-size: "PingFang SC";
+  font-size: 14px;
+  font-weight: 500;
+  color: #8892A6;
+  text-align: left;
+}
+
+.set > span,
+.esc > span {
+  width: 28px;
+  height: 20px;
+}
+
+.left {
+  float: left;
+}
+
+.left .left_right {
+  float: right;
+}
+ 
+.left .left_right .questionbackground,
+.left .left_right .seek  {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.home_picture {
+  float: right;
+}
+
+
+.home_picture {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 36px;
+  left: -52px;
+}
+
+.homepage {
+  margin-top: 18px;
+  margin-left: 20px;
+}
+.myhome > span {
+  margin-top: 16px;
+  margin-left: 5px;
+}
+
+.setup {
+  margin-top: 18px;
+  margin-left: 18px;
+}
+.set > span {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.exit {
+  margin-top: 17px;
+  margin-left: 18px;
+}
+.esc > span {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+div.questionbackground {
+  position: relative;
+}
+div.questionbackground > .question {
+  position: absolute;
+  top: 7px;
+  left: 15px;
+}
+
+
+div.seek {
+  position: relative;
+}
+div.seek > .search {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+}
+
+.zhihulogo {
+  margin-top: 12px;
+  margin-left: 220px;
+}
+
+.homepage_size {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 40px;
+
+  /* 首页下划线样式 */
+  text-decoration: underline;
+  text-decoration-color: #1987Fb;
+  text-underline-offset: 9px;
+  text-decoration-thickness: 3px;
+}
+
+.discover,
+.answer {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.seek {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.questionbackground {
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.home_picture {
+  margin-top: 12px;
+  margin-right: 220px;
+}
+
+.message,
+.infrom {
+  margin-top: 14px;
+  margin-right: 36px;
+}
+
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+div,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+
