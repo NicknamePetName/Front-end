@@ -206,7 +206,8 @@ div.seek > .search {
 }
 
 .zhihulogo {
-  margin-top: 12px;
+  /* margin-top: 12px; */
+  vertical-align:middle;
   margin-left: 220px;
 }
 
@@ -218,7 +219,7 @@ div.seek > .search {
   /* 首页下划线样式 */
   text-decoration: underline;
   text-decoration-color: #1987Fb;
-  text-underline-offset: 9px;
+  text-underline-offset: 18px;
   text-decoration-thickness: 3px;
 }
 
