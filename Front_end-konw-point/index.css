@@ -98,3 +98,12 @@
     float: left;
     float: right;
 }
+
+.publish {
+    /* 背景颜色(渐变方向，开始颜色，结束颜色) */
+    /* xxxdeg   xxx范围(0到360) 更精确的渐变方向 */
+    background: linear-gradient(to left bottom, #95ca47 , #4dc891);
+    /* 可以在每个色值后面跟一个值，百分比，PX，来约定变色起止位置 */
+    background: linear-gradient(to right, #95ca47 30%, #4dc891 5px);
+    /* 还支持 多颜色渐变，弧形渐变：https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Images/Using_CSS_gradients */
+}
