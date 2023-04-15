@@ -1,0 +1,45 @@
+.date {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    line-height: 140px;
+    border-radius: 4px;
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.15) 50%);
+    background: linear-gradient(rgba(0,0,0,0.05) 50%,rgba(0,0,0,0.15) 100%);
+  }
+  
+  
+  .tuesday {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    color: #fed9d9;
+    background: linear-gradient(#d94747,#b9191a);
+    text-shadow: 1px 1px 2px purple;
+  }
+  
+  
+  .seventeen {
+    padding-top: 33px;
+    height: 107px;
+    line-height: 107px;
+    font-size: 94px;
+    font-family: "Arial,Helvetica,sans-senif";
+    font-weight: bold;
+    color: #202020;
+  }
+  
+  .banner {
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 715px;
+    height: 200px;
+    background: url(https://document.youkeda.com/P3-1-HTML-CSS/1.9/music-bg.jpg) 
+      no-repeat center / cover;
+  }

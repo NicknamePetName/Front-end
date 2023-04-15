@@ -106,4 +106,12 @@
     /* 可以在每个色值后面跟一个值，百分比，PX，来约定变色起止位置 */
     background: linear-gradient(to right, #95ca47 30%, #4dc891 5px);
     /* 还支持 多颜色渐变，弧形渐变：https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Images/Using_CSS_gradients */
+
+    background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+    background-repeat: no-repeat;   /* 背景图重复 */
+    background-position: center;    /* 背景图位置 */
+    background-size: contain;       /* 背景图大小 */
+
+    background: url(https://style.youkeda.com/img/ykd-components/logo.png)
+    no-repeat center / contain;   /* 合并效果 */
 }
