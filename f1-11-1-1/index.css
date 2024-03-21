@@ -215,7 +215,7 @@ img.area_arrow {
 
 
 .retrieve_password {
-  width: 154px;
+  width: 156px;
   height: 14px;
   line-height: 14px;
   font-family: "PingFang SC  ";
@@ -236,7 +236,7 @@ img.area_arrow {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 100;
-  font-family: "PingFang SC  ";
+  font-family: "PingFang SC";
 
   margin-bottom: 33px;
 }
